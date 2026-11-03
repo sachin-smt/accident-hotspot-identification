@@ -1,0 +1,28 @@
+ACCIDENT HOTSPOT DBSCAN PROTOTYPE — RUN SUMMARY
+
+Input: indian_roads_dataset.csv
+Records read: 20,000
+Columns: 24
+Coordinate rows missing: 0
+DBSCAN: Haversine distance, grouped by city
+eps: 1.0 km
+min_samples: 10
+Distinct clusters: 246
+Clustered records: 9,457 (47.28%)
+Noise/outlier records: 10,543 (52.72%)
+
+LARGEST CLUSTERS:
+      city  cluster_id  accident_count  latitude  longitude  fatal_records  total_casualties  avg_risk_score
+Chandigarh          24            2577 30.698616  76.801333            378              4377        0.441618
+   Chennai          30             282 12.890963  80.171724             37               469        0.441844
+   Chennai          27             235 13.126997  80.138376             39               407        0.421064
+      Pune         191             202 18.501548  73.876694             31               379        0.412871
+   Kolkata         101             195 22.658686  88.312303             30               366        0.437949
+   Chennai          26             190 12.961855  80.248430             31               336        0.462895
+   Kolkata          95             175 22.471137  88.347204             29               300        0.428286
+   Chennai          36             174 13.058531  80.235408             27               278        0.448851
+   Chennai          25             155 13.169338  80.190570             29               293        0.470968
+   Chennai          33             146 12.858234  80.244806             23               261        0.415753
+
+WARNING:
+The dataset's real-world provenance is unverified. Treat this as a coding prototype, not validated real-world accident hotspot evidence. Some cluster sizes/coordinate patterns should be investigated before drawing conclusions.

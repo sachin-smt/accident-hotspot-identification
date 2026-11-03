@@ -1,0 +1,22 @@
+.hotspot-marker {
+  filter: drop-shadow(0 0 3px rgba(17, 24, 39, 0.8));
+}
+
+.map-legend .high,
+.map-legend .medium,
+.map-legend .low {
+  border: 1px solid #111827;
+  box-shadow: 0 0 5px rgba(17, 24, 39, 0.65);
+}
+
+.map-legend .high {
+  background: #DC2626 !important;
+}
+
+.map-legend .medium {
+  background: #F97316 !important;
+}
+
+.map-legend .low {
+  background: #FACC15 !important;
+}
